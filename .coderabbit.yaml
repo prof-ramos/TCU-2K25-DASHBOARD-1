@@ -1,261 +1,203 @@
-# CodeRabbit Configuration for TCU-2K25-DASHBOARD
-# Dashboard de Estudos TCU TI 2025
-# React 19.2 + TypeScript + Vite + Node.js + Express + SQLite
-
+# .coderabbit.yaml
+# =============================================================================
+# GLOBAL SETTINGS
+# =============================================================================
 language: "pt-BR"
+tone_instructions: ""
 early_access: false
 enable_free_tier: true
-
+# =============================================================================
+# REVIEWS
+# =============================================================================
 reviews:
-  # Review configuration
-  profile: "chill"
+  profile: "assertive"
   request_changes_workflow: false
   high_level_summary: true
   high_level_summary_placeholder: "@coderabbitai summary"
-  poem: false
+  high_level_summary_in_walkthrough: false
+  auto_title_placeholder: "@coderabbitai"
+  auto_title_instructions: ""
   review_status: true
+  commit_status: true
+  fail_commit_status: false
   collapse_walkthrough: false
-  sequence_diagrams: false
   changed_files_summary: true
+  sequence_diagrams: true
+  estimate_code_review_effort: true
+  assess_linked_issues: true
+  related_issues: true
+  related_prs: true
+  suggested_labels: true
+  auto_apply_labels: false
+  suggested_reviewers: true
+  auto_assign_reviewers: false
+  poem: true
   labeling_instructions: []
-
-  # Auto-review triggers
+  path_filters: []
+  path_instructions: []
+  abort_on_close: true
+  disable_cache: false
   auto_review:
     enabled: true
     auto_incremental_review: true
-    ignore_title_keywords:
-      - "WIP"
-      - "DO NOT REVIEW"
-      - "DRAFT"
-
+    ignore_title_keywords: []
+    labels: []
     drafts: false
-    base_branches:
-      - main
-      - develop
-
-  # Paths to include/exclude
-  path_filters:
-    - "!node_modules/**"
-    - "!dist/**"
-    - "!build/**"
-    - "!coverage/**"
-    - "!*.min.js"
-    - "!*.min.css"
-    - "!package-lock.json"
-    - "!yarn.lock"
-    - "!pnpm-lock.yaml"
-    - "!components/ui/**"  # shadcn/ui generated components
-    - "!.env*"
-    - "!*.log"
-    - "!sqlite_data/**"
-
-  path_instructions:
-    - path: "**/*.tsx"
-      instructions: |
-        - Verifique se os componentes React seguem as melhores práticas
-        - Garanta que hooks sejam usados corretamente
-        - Verifique se há problemas de performance (re-renders desnecessários)
-        - Confirme que componentes são tipados corretamente com TypeScript
-        - Verifique acessibilidade (a11y) em elementos interativos
-
-    - path: "**/*.ts"
-      instructions: |
-        - Verifique tipagem TypeScript rigorosa
-        - Garanta que interfaces e types estejam bem definidos
-        - Verifique tratamento de erros com try-catch
-        - Confirme que funções async usem await corretamente
-
-    - path: "contexts/*.tsx"
-      instructions: |
-        - Verifique se o Context API está sendo usado eficientemente
-        - Garanta que não há problemas de performance com re-renders
-        - Confirme que os providers estão otimizados com useMemo/useCallback quando necessário
-        - Verifique se as atualizações de estado são otimistas onde apropriado
-
-    - path: "server/**/*.js"
-      instructions: |
-        - Verifique segurança de endpoints (validação de entrada, sanitização)
-        - Confirme tratamento adequado de erros
-        - Verifique se queries SQL estão protegidas contra injection
-        - Garanta que respostas HTTP usem status codes corretos
-
-    - path: "services/*.ts"
-      instructions: |
-        - Verifique tratamento de erros em chamadas API
-        - Confirme que há fallbacks apropriados (ex: localStorage)
-        - Verifique se API keys não estão expostas em logs
-        - Garanta que requisições assíncronas sejam tratadas corretamente
-
-    - path: "Dockerfile"
-      instructions: |
-        - Verifique boas práticas de segurança Docker
-        - Confirme multi-stage builds quando apropriado
-        - Verifique se imagens base são oficiais e atualizadas
-
-    - path: "docker-compose.yml"
-      instructions: |
-        - Verifique configuração de volumes persistentes
-        - Confirme que portas estão mapeadas corretamente
-        - Verifique se variáveis de ambiente são usadas apropriadamente
-
-# Knowledge Base - Documentação do projeto
+    base_branches: []
+    ignore_usernames: []
+  finishing_touches:
+    docstrings:
+      enabled: true
+    unit_tests:
+      enabled: true
+  pre_merge_checks:
+    docstrings:
+      mode: "warning"
+      threshold: 80
+    title:
+      mode: "warning"
+      requirements: ""
+    description:
+      mode: "warning"
+    issue_assessment:
+      mode: "warning"
+  tools:
+    ast-grep:
+      rule_dirs: []
+      util_dirs: []
+      essential_rules: true
+      packages: []
+    shellcheck:
+      enabled: false
+    ruff:
+      enabled: false
+    markdownlint:
+      enabled: false
+    github-checks:
+      enabled: true
+      timeout_ms: 90000
+    languagetool:
+      enabled: true
+      enabled_rules: []
+      disabled_rules: []
+      enabled_categories: []
+      disabled_categories: []
+      enabled_only: false
+      level: "default"
+    biome:
+      enabled: false
+    hadolint:
+      enabled: true
+    swiftlint:
+      enabled: false
+      config_file: ""
+    phpstan:
+      enabled: false
+      level: "default"
+    phpmd:
+      enabled: false
+    phpcs:
+      enabled: false
+    golangci-lint:
+      enabled: false
+      config_file: ""
+    yamllint:
+      enabled: false
+    gitleaks:
+      enabled: true
+    checkov:
+      enabled: false
+    detekt:
+      enabled: false
+      config_file: ""
+    eslint:
+      enabled: true
+    flake8:
+      enabled: false
+    rubocop:
+      enabled: false
+    buf:
+      enabled: false
+    regal:
+      enabled: false
+    actionlint:
+      enabled: true
+    pmd:
+      enabled: false
+      config_file: ""
+    cppcheck:
+      enabled: false
+    semgrep:
+      enabled: true
+      config_file: ""
+    circleci:
+      enabled: false
+    clippy:
+      enabled: false
+    sqlfluff:
+      enabled: false
+    prismaLint:
+      enabled: false
+    pylint:
+      enabled: false
+    oxc:
+      enabled: false
+    shopifyThemeCheck:
+      enabled: false
+    luacheck:
+      enabled: false
+    brakeman:
+      enabled: false
+    dotenvLint:
+      enabled: false
+    htmlhint:
+      enabled: false
+    checkmake:
+      enabled: false
+    osvScanner:
+      enabled: true
+# =============================================================================
+# CHAT
+# =============================================================================
 chat:
+  art: true
   auto_reply: true
-
+  integrations:
+    jira:
+      usage: "auto"
+    linear:
+      usage: "auto"
+# =============================================================================
+# KNOWLEDGE BASE
+# =============================================================================
 knowledge_base:
-  # Estrutura do projeto
+  opt_out: false
+  web_search:
+    enabled: true
+  code_guidelines:
+    enabled: true
+    filePatterns: []
   learnings:
-    - pattern: "import.*from.*@/"
-      content: "O projeto usa alias @/ que resolve para a raiz do projeto (não há diretório src/)"
-
-    - pattern: "ProgressoContext|useProgresso"
-      content: |
-        O ProgressoContext gerencia o estado de progresso com:
-        - completedItems: Set<string> para IDs de itens completados
-        - Persistência via SQLite API com fallback para localStorage
-        - Atualizações otimistas (UI atualiza imediatamente, DB sincroniza em background)
-
-    - pattern: "gemini|GEMINI_API_KEY"
-      content: |
-        Integração com Google Gemini API (modelo gemini-2.5-flash):
-        - API key exposta no bundle (desenvolvimento apenas)
-        - Usa grounded search para informações atualizadas
-        - Otimizado para contexto de concurso TCU
-
-    - pattern: "edital|Materia|Topic|Subtopic"
-      content: |
-        Modelo de dados hierárquico:
-        - Edital → Materia[] → Topic[] → Subtopic[] (recursivo)
-        - IDs únicos (ex: "1.2.3") para cada item
-        - Apenas leaf nodes (sem subtópicos) são rastreados no progresso
-
-    - pattern: "database|sqlite|progress"
-      content: |
-        API de progresso (Express + SQLite):
-        - GET /api/progress - retorna IDs completados
-        - POST /api/progress - adiciona IDs (body: {ids: string[]})
-        - DELETE /api/progress - remove IDs (body: {ids: string[]})
-        - Fallback para localStorage se API indisponível
-
-# Custom prompts for reviews
-tone_instructions: |
-  - Seja construtivo e educativo nas revisões
-  - Priorize segurança, performance e manutenibilidade
-  - Sugira melhorias específicas com exemplos de código quando relevante
-  - Seja conciso mas completo nas explicações
-  - Use português brasileiro (pt-BR)
-
-# Security and quality checks
-checks:
-  # Security checks
-  - name: "API Key Exposure"
-    description: "Verificar se API keys ou secrets estão sendo commitados"
-    pattern: "(GEMINI_API_KEY|API_KEY|SECRET|PASSWORD|TOKEN)\\s*=\\s*['\"]\\w+"
-    severity: "error"
-    files:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-    exclude:
-      - "**/*.example.*"
-      - "**/*.template.*"
-
-  - name: "Console Logs"
-    description: "Verificar console.log esquecidos (exceto console.error)"
-    pattern: "console\\.(log|debug|info)\\("
-    severity: "warning"
-    files:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-    exclude:
-      - "**/*.test.*"
-      - "vite.config.ts"
-
-  - name: "SQL Injection Risk"
-    description: "Verificar queries SQL que concatenam strings diretamente"
-    pattern: "db\\.(run|all|get)\\([`'\"].*\\$\\{.*\\}.*[`'\"]"
-    severity: "error"
-    files:
-      - "server/**/*.js"
-
-  - name: "TODO Comments"
-    description: "Rastrear TODOs e FIXMEs no código"
-    pattern: "(TODO|FIXME|HACK|XXX):"
-    severity: "info"
-    files:
-      - "**/*.ts"
-      - "**/*.tsx"
-      - "**/*.js"
-
-  - name: "Hardcoded URLs"
-    description: "Verificar URLs hardcoded que deveriam usar variáveis de ambiente"
-    pattern: "(http://localhost|https://localhost):\\d+"
-    severity: "warning"
-    files:
-      - "services/**/*.ts"
-    exclude:
-      - "**/*.test.*"
-      - "vite.config.ts"
-
-# Tools configuration
-tools:
-  shellcheck:
-    enabled: true
-
-  eslint:
-    enabled: true
-
-  biome:
-    enabled: true
-
-  ruff:
-    enabled: false  # Python não usado no projeto
-
-  markdownlint:
-    enabled: true
-
-  github-checks:
-    enabled: true
-    timeout: 30
-
-# Pre-merge checks
-pre_merge_checks:
-  - name: "React Best Practices"
-    description: "Verificar boas práticas React (hooks, performance)"
-    instructions: |
-      - Hooks devem seguir as Rules of Hooks
-      - useEffect deve ter array de dependências correto
-      - Componentes pesados devem usar React.memo quando apropriado
-      - Event handlers devem usar useCallback quando passados como props
-    mode: "warning"
-
-  - name: "TypeScript Strict"
-    description: "Verificar tipagem rigorosa TypeScript"
-    instructions: |
-      - Evitar uso de 'any' sem justificativa
-      - Interfaces devem estar bem definidas
-      - Funções devem ter tipos de retorno explícitos quando não óbvio
-      - Usar tipos ao invés de interfaces quando apropriado
-    mode: "warning"
-
-  - name: "Security Check"
-    description: "Verificar questões de segurança críticas"
-    instructions: |
-      - Nenhuma API key ou secret commitado
-      - Queries SQL usando prepared statements
-      - Inputs de usuário devem ser validados/sanitizados
-      - CORS configurado apropriadamente no backend
-    mode: "error"
-
-  - name: "Docker Best Practices"
-    description: "Verificar boas práticas Docker quando arquivos Docker são modificados"
-    instructions: |
-      - Usar imagens base oficiais e minimalistas
-      - Multi-stage builds quando apropriado
-      - .dockerignore configurado corretamente
-      - Expor apenas portas necessárias
-    mode: "warning"
-
-# Bot behavior
-abort_on_close: true
+    scope: "auto"
+  issues:
+    scope: "auto"
+  jira:
+    usage: "auto"
+    project_keys: []
+  linear:
+    usage: "auto"
+    team_keys: []
+  pull_requests:
+    scope: "auto"
+  mcp:
+    usage: "auto"
+    disabled_servers: []
+# =============================================================================
+# CODE GENERATION
+# =============================================================================
+code_generation:
+  docstrings:
+    language: "pt-BR"
+    path_instructions: []
+  unit_tests:
+    path_instructions: []

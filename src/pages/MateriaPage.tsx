@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import type { Materia } from '../types';
 import TopicItem from '../components/features/TopicItem';
 import { useProgresso } from '../hooks/useProgresso';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, BookOpen } from 'lucide-react';
 import { Progress } from '../components/ui/progress';
 import { Accordion } from '../components/ui/accordion';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
@@ -20,10 +20,16 @@ const MateriaPage: React.FC<MateriaPageProps> = ({ materia }) => {
 
     return (
         <div className="max-w-4xl mx-auto">
-             <Button variant="ghost" onClick={() => navigate('/')} className="mb-4">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Voltar ao Dashboard
-            </Button>
+            <div className="flex gap-2 mb-4">
+                <Button variant="ghost" onClick={() => navigate('/materias')} className="flex-1 sm:flex-none">
+                    <BookOpen className="h-4 w-4 mr-2" />
+                    Voltar às Matérias
+                </Button>
+                <Button variant="outline" onClick={() => navigate('/')} className="flex-1 sm:flex-none">
+                    <ArrowLeft className="h-4 w-4 mr-2" />
+                    Dashboard
+                </Button>
+            </div>
             <Card>
                 <CardHeader>
                     <CardTitle className="text-2xl">{materia.name}</CardTitle>

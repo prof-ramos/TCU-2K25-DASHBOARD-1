@@ -72,7 +72,7 @@ export const ProgressoProvider: React.FC<{ children: ReactNode }> = ({ children 
             }
         })();
     }, [completedItems]);
-    
+
     const getMateriaStats = useCallback((materia: Materia) => {
         const total = countLeafNodes(materia.topics);
         let completed = 0;
@@ -110,7 +110,7 @@ export const ProgressoProvider: React.FC<{ children: ReactNode }> = ({ children 
         if (!item.subtopics || item.subtopics.length === 0) {
             return completedItems.has(item.id) ? 'completed' : 'incomplete';
         }
-        
+
         const leafNodes = getLeafIds(item);
 
         const completedCount = leafNodes.filter(id => completedItems.has(id)).length;

@@ -5,7 +5,9 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { useTheme } from './hooks/useTheme';
 import { ProgressoProvider } from './contexts/ProgressoContext';
 import Dashboard from './pages/Dashboard';
+import MateriasPage from './pages/MateriasPage';
 import MateriaPage from './pages/MateriaPage';
+import SearchPage from './pages/SearchPage';
 import Layout from './components/common/Layout';
 import { getEdital, getMateriaBySlug } from '@/data/edital';
 import type { Materia } from './types';
@@ -29,11 +31,13 @@ const Main: React.FC = () => {
     useEffect(() => {
         document.body.className = theme;
     }, [theme]);
-    
+
     return (
         <Layout>
             <Routes>
                 <Route path="/" element={<Dashboard edital={edital} />} />
+                <Route path="/materias" element={<MateriasPage />} />
+                <Route path="/search" element={<SearchPage />} />
                 <Route path="/materia/:slug" element={<MateriaPageRoute />} />
             </Routes>
         </Layout>
@@ -59,7 +63,7 @@ const MateriaPageRoute: React.FC = () => {
     if (materia === undefined) {
        return <div className="text-center p-8">Matéria não encontrada. <button onClick={() => navigate('/')} className="text-primary underline">Voltar</button></div>;
     }
-    
+
     if (materia === null) {
         return <div className="text-center p-8">Carregando matéria...</div>;
     }

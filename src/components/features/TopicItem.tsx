@@ -17,18 +17,18 @@ interface TopicItemProps {
 const TopicItem: React.FC<TopicItemProps> = ({ topic }) => {
     const hasSubtopics = 'subtopics' in topic && topic.subtopics && topic.subtopics.length > 0;
     const { toggleCompleted, getItemStatus } = useProgresso();
-    
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [geminiResult, setGeminiResult] = useState<GeminiSearchResult | null>(null);
     const [isLoading, setIsLoading] = useState(false);
 
     const status = getItemStatus(topic as Topic);
-    
+
     const handleCheckboxClick = (e: React.MouseEvent) => {
         e.stopPropagation(); // Prevent accordion from toggling
         toggleCompleted(topic);
     };
-    
+
     const handleGeminiClick = async (e: React.MouseEvent) => {
         e.stopPropagation();
         setIsLoading(true);
@@ -43,16 +43,16 @@ const TopicItem: React.FC<TopicItemProps> = ({ topic }) => {
     if (!hasSubtopics) {
         return (
             <div className="flex items-center gap-2 py-2 pl-8 pr-2 group">
-                 <Checkbox 
+                 <Checkbox
                     id={topic.id}
-                    checked={checkboxState} 
+                    checked={checkboxState}
                     onClick={() => toggleCompleted(topic)}
                     aria-label={`Marcar ${topic.title}`}
                 />
-                <label 
+                <label
                     htmlFor={topic.id}
                     className={cn(
-                        "flex-1 text-sm cursor-pointer", 
+                        "flex-1 text-sm cursor-pointer",
                         status === 'completed' && 'line-through text-muted-foreground'
                     )}
                 >
@@ -75,9 +75,9 @@ const TopicItem: React.FC<TopicItemProps> = ({ topic }) => {
     return (
         <AccordionItem value={topic.id} className="border-b-0">
              <div className="flex items-center gap-2 group -ml-4">
-                <Checkbox 
-                    checked={checkboxState} 
-                    onClick={handleCheckboxClick} 
+                <Checkbox
+                    checked={checkboxState}
+                    onClick={handleCheckboxClick}
                     aria-label={`Marcar todos os subtópicos de ${topic.title}`}
                 />
                 <AccordionTrigger className="flex-1 py-2 text-left">
@@ -101,7 +101,7 @@ const TopicItem: React.FC<TopicItemProps> = ({ topic }) => {
                     <TopicItem key={subtopic.id} topic={subtopic} />
                 ))}
             </AccordionContent>
-            
+
             <GeminiInfoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
