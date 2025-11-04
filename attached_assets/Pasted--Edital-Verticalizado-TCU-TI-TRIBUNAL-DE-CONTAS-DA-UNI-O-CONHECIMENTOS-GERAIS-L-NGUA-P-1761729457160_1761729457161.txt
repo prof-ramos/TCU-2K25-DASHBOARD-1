@@ -1,0 +1,511 @@
+# Edital Verticalizado - TCU TI (TRIBUNAL DE CONTAS DA UNIÃO)
+
+## CONHECIMENTOS GERAIS
+
+### LÍNGUA PORTUGUESA
+1. Compreensão e interpretação de textos de gêneros variados
+2. Reconhecimento de tipos e gêneros textuais
+3. Domínio da ortografia oficial
+4. Domínio dos mecanismos de coesão textual
+    4.1 Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual
+    4.2 Emprego de tempos e modos verbais
+5. Domínio da estrutura morfossintática do período
+    5.1 Emprego das classes de palavras
+    5.2 Relações de coordenação entre orações e entre termos da oração
+    5.3 Relações de subordinação entre orações e entre termos da oração
+    5.4 Emprego dos sinais de pontuação
+    5.5 Concordância verbal e nominal
+    5.6 Regência verbal e nominal
+    5.7 Emprego do sinal indicativo de crase
+    5.8 Colocação dos pronomes átonos
+6. Reescrita de frases e parágrafos do texto
+    6.1 Significação das palavras
+    6.2 Substituição de palavras ou de trechos de texto
+    6.3 Reorganização da estrutura de orações e de períodos do texto
+    6.4 Reescrita de textos de diferentes gêneros e níveis de formalidade
+
+### LÍNGUA INGLESA
+1. Compreensão de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais
+2. Itens gramaticais relevantes para compreensão de conteúdos semânticos
+3. Conhecimento e uso das formas contemporâneas da linguagem inglesa
+
+### RACIOCÍNIO ANÁLITICO
+1. Raciocínio analítico e a argumentação
+    1.1 O uso do senso crítico na argumentação
+    1.2 Tipos de argumentos: argumentos falaciosos e apelativos
+    1.3 Comunicação eficiente de argumentos
+
+### CONTROLE EXTERNO
+1. Conceito, tipos e formas de controle
+2. Controle interno e externo
+3. Controle parlamentar
+4. Controle pelos tribunais de contas
+5. Controle administrativo
+6. Lei nº 8.429/1992 (Lei de Improbidade Administrativa)
+7. Sistemas de controle jurisdicional da administração pública
+    7.1 Contencioso administrativo e sistema da jurisdição una
+8. Controle jurisdicional da administração pública no direito brasileiro
+9. Controle da atividade financeira do Estado: espécies e sistemas
+10. Tribunal de Contas da União (TCU), Tribunais de Contas dos Estados e do Distrito Federal
+
+### ADMINISTRAÇÃO PÚBLICA
+1. Administração
+    1.1 Abordagens clássica, burocrática e sistêmica da administração
+    1.2 Evolução da administração pública no Brasil após 1930; reformas administrativas; a nova gestão pública
+2. Processo administrativo
+    2.1 Funções da administração: planejamento, organização, direção e controle
+    2.2 Estrutura organizacional
+    2.3 Cultura organizacional
+3. Gestão de pessoas
+    3.1 Equilíbrio organizacional
+    3.2 Objetivos, desafios e características da gestão de pessoas
+    3.3 Comportamento organizacional: relações indivíduo/organização, motivação, liderança, desempenho
+4. Noções de gestão de processos: técnicas de mapeamento, análise e melhoria de processos
+5. Gestão de projetos
+    5.1 Elaboração, análise e avaliação de projetos
+    5.2 Principais características dos modelos de gestão de projetos
+    5.3 Projetos e suas etapas
+    5.4 Metodologia ágil
+6. Administração de recursos materiais
+7. ESG
+
+### DIREITO CONSTITUCIONAL
+1. Constituição
+    1.1 Conceito, objeto, elementos e classificações
+    1.2 Supremacia da Constituição
+    1.3 Aplicabilidade das normas constitucionais
+    1.4 Interpretação das normas constitucionais
+    1.5 Mutação constitucional
+2. Poder constituinte
+    2.1 Características
+    2.2 Poder constituinte originário
+    2.3 Poder constituinte derivado
+3. Princípios fundamentais
+4. Direitos e garantias fundamentais
+    4.1 Direitos e deveres individuais e coletivos
+    4.2 Habeas corpus, mandado de segurança, mandado de injunção e habeas data
+    4.3 Direitos sociais
+    4.4 Direitos políticos
+    4.5 Partidos políticos
+    4.6 O ente estatal titular de direitos fundamentais
+5. Organização do Estado
+    5.1 Organização político-administrativa
+    5.2 Estado federal brasileiro
+    5.3 A União
+    5.4 Estados federados
+    5.5 Municípios
+    5.6 O Distrito Federal
+    5.7 Territórios
+    5.8 Intervenção federal
+    5.9 Intervenção dos estados nos municípios
+6. Administração pública
+    6.1 Disposições gerais
+    6.2 Servidores públicos
+7. Organização dos poderes no Estado
+    7.1 Mecanismos de freios e contrapesos
+    7.2 Poder Legislativo
+    7.3 Poder Executivo
+    7.4 Poder Judiciário
+8. Funções essenciais à justiça
+    8.1 Ministério Público
+    8.2 Advocacia Pública
+    8.3 Advocacia e Defensoria Pública
+9. Controle de constitucionalidade
+    9.1 Sistemas gerais e sistema brasileiro
+    9.2 Controle incidental ou concreto
+    9.3 Controle abstrato de constitucionalidade
+    9.4 Exame *in abstractu* da constitucionalidade de proposições legislativas
+    9.5 Ação declaratória de constitucionalidade
+    9.6 Ação direta de inconstitucionalidade
+    9.7 Arguição de descumprimento de preceito fundamental
+    9.8 Ação direta de inconstitucionalidade por omissão
+    9.9 Ação direta de inconstitucionalidade interventiva
+10. Defesa do Estado e das instituições democráticas
+    10.1 Estado de defesa e estado de sítio
+    10.2 Forças armadas
+    10.3 Segurança pública
+11. Sistema Tributário Nacional
+    11.1 Princípios gerais
+    11.2 Limitações do poder de tributar
+    11.3 Impostos da União, dos estados e dos municípios
+    11.4 Repartição das receitas tributárias
+12. Finanças públicas
+    12.1 Normas gerais
+    12.2 Orçamentos
+13. Ordem econômica e financeira
+    13.1 Princípios gerais da atividade econômica
+    13.2 Política urbana, agrícola e fundiária e reforma agrária
+14. Sistema Financeiro Nacional
+15. Ordem social
+16. Emenda Constitucional nº 103/2019 (Reforma da Previdência)
+17. Direitos e interesses das populações indígenas
+18. Direitos das Comunidades Remanescentes de Quilombos
+
+### DIREITO ADMINISTRATIVO
+1. Estado, governo e administração pública
+    1.1 Conceitos
+    1.2 Elementos
+2. Direito administrativo
+    2.1 Conceito
+    2.2 Objeto
+    2.3 Fontes
+3. Ato administrativo
+    3.1 Conceito, requisitos, atributos, classificação e espécies
+    3.2 Extinção do ato administrativo: cassação, anulação, revogação e convalidação
+    3.3 Decadência administrativa
+4. Agentes públicos
+    4.1 Legislação pertinente
+        4.1.1 Lei nº 8.112/1990
+        4.1.2 Disposições constitucionais aplicáveis
+    4.2 Disposições doutrinárias
+        4.2.1 Conceito
+        4.2.2 Espécies
+        4.2.3 Cargo, emprego e função pública
+        4.2.4 Provimento
+        4.2.5 Vacância
+        4.2.6 Efetividade, estabilidade e vitaliciedade
+        4.2.7 Remuneração
+        4.2.8 Direitos e deveres
+        4.2.9 Responsabilidade
+        4.2.10 Processo administrativo disciplinar
+5. Poderes da administração pública
+    5.1 Hierárquico, disciplinar, regulamentar e de polícia
+    5.2 Uso e abuso do poder
+6. Regime jurídico-administrativo
+    6.1 Conceito
+    6.2 Princípios expressos e implícitos da administração pública
+7. Responsabilidade civil do Estado
+    7.1 Evolução histórica
+    7.2 Responsabilidade civil do Estado no direito brasileiro
+        7.2.1 Responsabilidade por ato comissivo do Estado
+        7.2.2 Responsabilidade por omissão do Estado
+    7.3 Requisitos para a demonstração da responsabilidade do Estado
+    7.4 Causas excludentes e atenuantes da responsabilidade do Estado
+    7.5 Reparação do dano
+    7.6 Direito de regresso
+8. Serviços públicos
+    8.1 Conceito
+    8.2 Elementos constitutivos
+    8.3 Formas de prestação e meios de execução
+    8.4 Delegação: concessão, permissão e autorização
+    8.5 Classificação
+    8.6 Princípios
+9. Organização administrativa
+    9.1 Centralização, descentralização, concentração e desconcentração
+    9.2 Administração direta e indireta
+    9.3 Autarquias, fundações, empresas públicas e sociedades de economia mista
+    9.4 Entidades paraestatais e terceiro setor: serviços sociais autônomos, entidades de apoio, organizações sociais, organizações da sociedade civil de interesse público
+10. Controle da administração pública
+    10.1 Controle exercido pela administração pública
+    10.2 Controle judicial
+    10.3 Controle legislativo
+    10.4 Improbidade administrativa: Lei nº 8.429/1992
+11. Processo administrativo
+    11.1 Lei nº 9.784/1999
+12. Licitações e contratos administrativos
+    12.1 Legislação pertinente
+        12.1.1 Lei nº 14.133/2021
+        12.1.2 Decreto nº 11.462/2023
+    12.2 Fundamentos constitucionais
+
+### AUDITORIA GOVERNAMENTAL
+1. Conceito, finalidade, objetivo, abrangência e atuação
+    1.1 Auditoria interna e externa: papéis
+2. Instrumentos de fiscalização: auditoria, levantamento, monitoramento, acompanhamento e inspeção
+3. Tipos de auditoria
+    3.1 Auditoria de conformidade
+    3.2 Auditoria operacional
+    3.3 Auditoria financeira
+4. Normas de auditoria
+    4.1 Normas de Auditoria do TCU
+    4.2 Normas da INTOSAI (Organização Internacional das Instituições Superiores de Controle): código de ética e princípios fundamentais de auditoria do setor público (ISSAIs 100, 200, 300 e 400)
+    4.3 Normas Brasileiras de Auditoria do Setor Público (NBASP)
+5. Planejamento de auditoria
+    5.1 Determinação de escopo
+    5.2 Materialidade, risco e relevância
+    5.3 Importância da amostragem estatística em auditoria
+    5.4 Matriz de planejamento
+6. Execução da auditoria
+    6.1 Programas de auditoria
+    6.2 Papéis de trabalho
+    6.3 Testes de auditoria
+    6.4 Técnicas e procedimentos: exame documental, inspeção física, conferência de cálculos, observação, entrevista, circularização, conciliações, análise de contas contábeis, revisão analítica, caracterização de achados de auditoria
+7. Evidências
+    7.1 Caracterização de achados de auditoria
+    7.2 Matriz de Achados e Matriz de Responsabilização
+8. Comunicação dos resultados: relatórios de auditoria
+
+---
+## CONHECIMENTOS ESPECÍFICOS
+
+### INFRAESTRUTURA DE TI
+1. Arquitetura e Infraestrutura de TI
+    1.1 Topologias físicas e lógicas de redes corporativas
+    1.2 Arquiteturas de data center (on-premises, cloud, híbrida)
+    1.3 Infraestrutura hiperconvergente
+    1.4 Arquitetura escalável, tolerante a falhas e redundante
+2. Redes e Comunicação de Dados
+    2.1 Protocolos de comunicação de dados: TCP, UDP, SCTP, ARP, TLS, SSL, OSPF, BGP, DNS, DHCP, ICMP, FTP, SFTP, SSH, HTTP, HTTPS, SMTP, IMAP, POP3
+    2.2 VLANs, STP, QoS, roteamento e switching em ambientes corporativos
+    2.3 SDN (Software Defined Networking) e redes programáveis
+    2.4 Wireless corporativo: Wi-Fi 6, WPA3, roaming, mesh
+3. Sistemas Operacionais e Servidores
+    3.1 Administração avançada de Linux e Windows Server
+    3.2 Virtualização (KVM, VMware vSphere/ESXi)
+    3.3 Serviços de diretório (Active Directory, LDAP)
+    3.4 Gerenciamento de usuários, permissões e GPOS
+4. Armazenamento e Backup
+    4.1 SAN, NAS, DAS: arquiteturas e protocolos (iSCSI, NFS, SMB)
+    4.2 RAID (níveis, vantagens, hot-spare)
+    4.3 Backup e recuperação: RPO, RTO, snapshots, deduplicação
+    4.4 Oracle RMAN
+5. Segurança de Infraestrutura
+    5.1 Hardening de servidores e dispositivos de rede
+    5.2 Firewalls (NGFW), IDS/IPS, proxies, NAC
+    5.3 VPNs, SSL/TLS, PKI, criptografia de dados
+    5.4 Segmentação de rede e zonas de segurança
+6. Monitoramento, Gestão e Automação
+    6.1 Ferramentas: Zabbix, New Relic e Grafana
+    6.2 Gerência de capacidade, disponibilidade e desempenho
+    6.3 ITIL v4: incidentes, problemas, mudanças e configurações (CMDB)
+    6.4 Scripts e automação com PowerShell, Bash e Puppet
+7. Alta Disponibilidade e Recuperação de Desastres
+    7.1 Clusters de alta disponibilidade e balanceamento de carga
+    7.2 Failover, heartbeat, fencing
+    7.3 Planos de continuidade de negócios e testes de DR
+
+### ENGENHARIA DE DADOS
+1. Bancos de Dados
+    1.1 Relacionais: Oracle e Microsoft SQL Server
+    1.2 Não relacionais (NoSQL): Elasticsearch e MongoDB
+    1.3 Modelagens de dados: relacional, multidimensional e NoSQL
+    1.4 SQL (Procedural Language / Structured Query Language)
+2. Arquitetura de Inteligência de Negócio
+    2.1 Data Warehouse
+    2.2 Data Mart
+    2.3 Data Lake
+    2.4 Data Mesh
+3. Conectores e Integração com Fontes de Dados
+    3.1 APIs REST/SOAP e Web Services
+    3.2 Arquivos planos (CSV, JSON, XML, Parquet)
+    3.3 Mensageria e eventos
+    3.4 Controle de integridade de dados
+    3.5 Segurança na captação de dados (TLS, autenticação, mascaramento)
+    3.6 Estratégias de buffer e ordenação
+4. Fluxo de Manipulação de Dados
+    4.1 ETL
+    4.2 Pipeline de dados: versionamento, logging e auditoria, tolerância a falhas, retries e checkpoints
+    4.3 Integração com CI/CD
+5. Governança e Qualidade de Dados
+    5.1 Linhagem e catalogação
+    5.2 Qualidade de dados: validação, conformidade e deduplicação
+    5.3 Metadados, glossários de dados e políticas de acesso
+6. Integração com Nuvem
+    6.1 Serviços gerenciados (Azure Data Factory, Azure Service Fabric, Azure Databricks)
+    6.2 Armazenamento (S3, Azure Blob, GCS)
+    6.3 Integração com serviços de IA e análise
+
+### ENGENHARIA DE SOFTWARE
+1. Arquitetura de Software
+    1.1 Padrões arquiteturais
+    1.2 Monolito
+    1.3 Microserviços
+    1.4 Serverless
+    1.5 Arquitetura orientada a eventos e mensageria
+    1.6 Padrões de integração (API Gateway, Service Mesh, CQRS)
+2. Design e Programação
+    2.1 Padrões de projeto (GoF e GRASP)
+    2.2 Concorrência, paralelismo, multithreading e programação assíncrona
+3. APIs e Integrações
+    3.1 Design e versionamento de APIs RESTful
+    3.2 Boas práticas de autenticação e autorização (OAuth2, JWT, OpenID Connect)
+4. Persistência de Dados
+    4.1 Modelagem relacional e normalização
+    4.2 Bancos NoSQL (MongoDB e Elasticsearch)
+    4.3 Versionamento e migração de esquemas
+5. DevOps e Integração Contínua
+    5.1 Pipelines de CI/CD (GitHub Actions)
+    5.2 Build, testes e deploy automatizados
+    5.3 Docker e orquestração com Kubernetes
+    5.4 Monitoramento e observabilidade: Grafana e New Relic
+6. Testes e Qualidade de Código
+    6.1 Testes automatizados: unitários, de integração e de contrato (API)
+    6.2 Análise estática de código e cobertura (SonarQube)
+7. Linguagens de Programação
+    7.1 Java
+8. Desenvolvimento Seguro
+    8.1 DevSecOps
+
+### SEGURANÇA DA INFORMAÇÃO
+1. Gestão de Identidades e Acesso
+    1.1 Autenticação e autorização
+    1.2 Single Sign-On (SSO)
+    1.3 Security Assertion Markup Language (SAML)
+    1.4 OAuth2 e OpenID Connect
+2. Privacidade e segurança por padrão
+3. Malware
+    3.1 Vírus
+    3.2 Keylogger
+    3.3 Trojan
+    3.4 Spyware
+    3.5 Backdoor
+    3.6 Worms
+    3.7 Rootkit
+    3.8 Adware
+    3.9 Fileless
+    3.10 Ransomware
+4. Controles e testes de segurança para aplicações Web e Web Services
+5. Múltiplos Fatores de Autenticação (MFA)
+6. Soluções para Segurança da Informação
+    6.1 Firewall
+    6.2 Intrusion Detection System (IDS)
+    6.3 Intrusion Prevention System (IPS)
+    6.4 Security Information and Event Management (SIEM)
+    6.5 Proxy
+    6.6 Identity Access Management (IAM)
+    6.7 Privileged Access Management (PAM)
+    6.8 Antivírus
+    6.9 Antispam
+7. Frameworks de segurança da informação e segurança cibernética
+    7.1 MITRE ATT&CK
+    7.2 CIS Controls
+    7.3 NIST CyberSecurity Framework (NIST CSF)
+8. Tratamento de incidentes cibernéticos
+9. Assinatura e certificação digital, criptografia e proteção de dados em trânsito e em repouso
+10. Segurança em nuvens e de contêineres
+11. Ataques a redes de computadores
+    11.1 DoS
+    11.2 DDoS
+    11.3 Botnets
+    11.4 Phishing
+    11.5 Zero-day exploits
+    11.6 Ping da morte
+    11.7 UDP Flood
+    11.8 MAC flooding
+    11.9 IP spoofing
+    11.10 ARP spoofing
+    11.11 Buffer overflow
+    11.12 SQL injection
+    11.13 Cross-Site Scripting (XSS)
+    11.14 DNS Poisoning
+
+### COMPUTAÇÃO EM NUVEM
+1. Fundamentos de Computação em Nuvem
+    1.1 Modelos de serviço: IaaS, PaaS, SaaS
+    1.2 Modelos de implantação: nuvem pública, privada e híbrida
+    1.3 Arquitetura orientada a serviços (SOA) e microsserviços
+    1.4 Elasticidade, escalabilidade e alta disponibilidade
+2. Plataformas e Serviços de Nuvem
+    2.1 AWS
+    2.2 Microsoft Azure
+    2.3 Google Cloud Platform
+3. Arquitetura de Soluções em Nuvem
+    3.1 Design de sistemas distribuídos resilientes
+    3.2 Arquiteturas serverless e event-driven
+    3.3 Balanceamento de carga e autoescalonamento
+    3.4 Containers e orquestração (Docker, Kubernetes)
+4. Redes e Segurança em Nuvem
+    4.1 VPNs, sub-redes, gateways e grupos de segurança
+    4.2 Gestão de identidade e acesso (IAM, RBAC, MFA)
+    4.3 Criptografia em trânsito e em repouso (TLS, KMS)
+    4.4 Zero Trust Architecture em ambientes de nuvem
+    4.5 VPNs site-to-site, Direct Connect, ExpressRoute
+5. DevOps, CI/CD e Infraestrutura como Código (IaC)
+    5.1 Ferramentas: Terraform
+    5.2 Pipelines de integração e entrega contínua (Jenkins, GitHub Actions)
+    5.3 Observabilidade: monitoramento, logging e tracing (CloudWatch, Azure Monitor, GCloud Monitoring)
+6. Governança, Compliance e Custos
+    6.1 Gerenciamento de custos e otimização de recursos
+    6.2 Políticas de uso e governança em nuvem (tagueamento, cotas, limites)
+    6.3 Conformidade com normas e padrões (ISO/IEC 27001, NIST 800-53, LGPD)
+    6.4 FinOps
+7. Armazenamento e Processamento de Dados
+    7.1 Tipos de armazenamento: objetos, blocos e arquivos
+    7.2 Data Lakes e processamento distribuído
+    7.3 Integração com Big Data e IA
+8. Migração e Modernização de Aplicações
+    8.1 Estratégias de migração
+    8.2 Ferramentas de migração (AWS Migration Hub, Azure Migrate, GCloud Migration Center)
+9. Multicloud
+    9.1 Arquiteturas multicloud e híbridas
+    9.2 Nuvem soberana e soberania de dados
+10. Normas sobre computação em nuvem no governo federal
+
+### INTELIGÊNCIA ARTIFICIAL
+1. Aprendizado de Máquina
+    1.1 Supervisionado
+    1.2 Não supervisionado
+    1.3 Semi-supervisionado
+    1.4 Aprendizado por reforço
+    1.5 Análise preditiva
+2. Redes Neurais e Deep Learning
+    2.1 Arquiteturas de redes neurais
+    2.2 Frameworks
+    2.3 Técnicas de treinamento
+    2.4 Aplicações
+3. Processamento de Linguagem Natural
+    3.1 Modelos
+    3.2 Pré-processamento
+    3.3 Agentes inteligentes
+    3.4 Sistemas multiagentes
+4. Inteligência Artificial Generativa
+5. Arquitetura e Engenharia de Sistemas de IA
+    5.1 MLOps
+    5.2 Deploy de modelos
+    5.3 Integração com computação em nuvem
+6. Ética, Transparência e Responsabilidade em IA
+    6.1 Explicabilidade e interpretabilidade de modelos
+    6.2 Viés algorítmico e discriminação
+    6.3 LGPD e impactos regulatórios da IA
+    6.4 Princípios éticos para uso de IA
+
+### CONTRATAÇÕES DE TI
+1. Etapas da Contratação de Soluções de TI
+    1.1 Estudo Técnico Preliminar (ETP)
+    1.2 Termo de Referência (TR) e Projeto Básico
+    1.3 Análise de riscos
+    1.4 Pesquisa de preços e matriz de alocação de responsabilidades (RACI)
+2. Tipos de Soluções e Modelos de Serviço
+    2.1 Contratação de software sob demanda
+    2.2 Licenciamento
+    2.3 SaaS, IaaS e PaaS
+    2.4 Fábrica de software e sustentação de sistemas
+    2.5 Serviços de infraestrutura em nuvem e data center
+    2.6 Serviços gerenciados de TI e outsourcing
+3. Governança, Fiscalização e Gestão de Contratos
+    3.1 Papéis e responsabilidades: gestor, fiscal técnico, fiscal administrativo
+    3.2 Indicadores de nível de serviço (SLAs) e penalidades
+    3.3 Gestão de mudanças contratuais e reequilíbrio econômico-financeiro
+4. Riscos e Controles em Contratações
+    4.1 Identificação, análise e resposta a riscos em contratos de TI
+    4.2 Controles internos aplicáveis às contratações públicas
+    4.3 Auditoria e responsabilização (jurídica e administrativa)
+5. Aspectos Técnicos e Estratégicos
+    5.1 Integração com o PDTIC e alinhamento com a estratégia institucional
+    5.2 Mapeamento e definição de requisitos técnicos e não funcionais
+    5.3 Sustentabilidade, acessibilidade e segurança da informação nos contratos
+6. Legislação e Normativos Aplicáveis
+    6.1 Lei nº 14.133/2021
+    6.2 Decreto nº 10.540/2020
+    6.3 Lei nº 13.709/2018 – LGPD (impactos em contratos de TI)
+    6.4 Instruções Normativas da Administração Pública
+        6.4.1 IN SGD/ME n° 01/2019 – Planejamento das contratações de soluções de TI
+        6.4.2 IN SGD/ME n° 94/2022 – Governança, Gestão e Fiscalização de Contratos de TI
+        6.4.3 IN SGD/ME n° 65/2021 – Gestão de riscos em contratações de TI
+
+### GESTÃO DE TECNOLOGIA DA INFORMAÇÃO
+1. Gerenciamento de Serviços (ITIL v4)
+    1.1 Conceitos básicos
+    1.2 Estrutura
+    1.3 Objetivos
+2. Governança de TI (COBIT 5)
+    2.1 Conceitos básicos
+    2.2 Estrutura
+    2.3 Objetivos
+3. Metodologias Ágeis
+    3.1 Scrum
+    3.2 XP (Extreme Programming)
+    3.3 Kanban
+    3.4 TDD (Test Driven Development)
+    3.5 BDD (Behavior Driven Development)
+    3.6 DDD (Domain Driven Design)

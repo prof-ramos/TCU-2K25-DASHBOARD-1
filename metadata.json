@@ -1,0 +1,5 @@
+{
+  "name": "TCU TI 2025 Study Dashboard",
+  "description": "A comprehensive dashboard to track study progress for the TCU TI 2025 exam. It allows users to mark topics and subtopics as completed, visualize overall and per-subject progress, and includes a countdown to the exam date.",
+  "requestFramePermissions": []
+}

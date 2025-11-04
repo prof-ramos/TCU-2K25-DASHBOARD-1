@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build artifacts (not needed for deployment)
+dist/
+.vite/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker files
+.docker/
+docker-compose.yml
+Dockerfile
+init-db.sql
+
+# Development files
+.eslintcache
+.DS_Store
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# SQLite database
+*.db
+*.sqlite
+data/
+
+# Server (if deploying separately)
+server/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+.qwen/
+
+# Misc
+.dockerignore
+metadata.json

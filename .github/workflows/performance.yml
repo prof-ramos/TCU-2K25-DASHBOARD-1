@@ -1,0 +1,131 @@
+name: Performance Monitoring
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    name: 🔦 Lighthouse CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout código
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: 📦 Instalar dependências
+        run: npm ci
+
+      - name: 🏗️ Build do projeto
+        run: npm run build
+        env:
+          GEMINI_API_KEY: PLACEHOLDER_FOR_LIGHTHOUSE
+
+      - name: 🚀 Iniciar servidor
+        run: npm run preview &
+
+      - name: ⏳ Aguardar servidor
+        run: npx wait-on http://localhost:4173 --timeout 30000
+
+      - name: 🔦 Executar Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            http://localhost:4173
+            http://localhost:4173/#/materia/governanca-e-gestao-de-ti
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      - name: 📊 Lighthouse Report Summary
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const results = require('./lhci_reports/manifest.json');
+            let comment = '## 🔦 Lighthouse Performance Report\n\n';
+
+            for (const result of results) {
+              const categories = result.summary;
+              comment += `### ${result.url}\n\n`;
+              comment += `| Category | Score |\n`;
+              comment += `|----------|-------|\n`;
+              comment += `| Performance | ${Math.round(categories.performance * 100)} |\n`;
+              comment += `| Accessibility | ${Math.round(categories.accessibility * 100)} |\n`;
+              comment += `| Best Practices | ${Math.round(categories['best-practices'] * 100)} |\n`;
+              comment += `| SEO | ${Math.round(categories.seo * 100)} |\n\n`;
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+  bundle-size:
+    name: 📦 Bundle Size Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout código
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: 📦 Instalar dependências
+        run: npm ci
+
+      - name: 🏗️ Build do projeto
+        run: npm run build
+        env:
+          GEMINI_API_KEY: PLACEHOLDER_FOR_ANALYSIS
+
+      - name: 📊 Analisar tamanho do bundle
+        run: |
+          echo "## 📦 Bundle Size Report" > bundle-report.md
+          echo "" >> bundle-report.md
+          echo "### JavaScript Files" >> bundle-report.md
+          echo "" >> bundle-report.md
+          echo "| File | Size | Gzipped |" >> bundle-report.md
+          echo "|------|------|---------|" >> bundle-report.md
+
+          for file in dist/assets/*.js; do
+            filename=$(basename "$file")
+            size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file")
+            gzip_size=$(gzip -c "$file" | wc -c)
+            size_kb=$(echo "scale=2; $size/1024" | bc)
+            gzip_kb=$(echo "scale=2; $gzip_size/1024" | bc)
+            echo "| $filename | ${size_kb} KB | ${gzip_kb} KB |" >> bundle-report.md
+          done
+
+          echo "" >> bundle-report.md
+          echo "### Total Size" >> bundle-report.md
+          total_size=$(du -sh dist | cut -f1)
+          echo "**Total dist folder:** $total_size" >> bundle-report.md
+
+          cat bundle-report.md
+
+      - name: 💬 Comentar PR com análise de bundle
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('bundle-report.md', 'utf8');
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });

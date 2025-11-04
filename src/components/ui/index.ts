@@ -1,0 +1,7 @@
+// Barrel export for UI components (shadcn/ui)
+export * from './card'
+export * from './progress'
+export * from './accordion'
+export * from './dialog'
+export * from './button'
+export * from './checkbox'

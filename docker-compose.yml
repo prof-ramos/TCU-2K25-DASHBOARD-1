@@ -1,0 +1,85 @@
+# =====================================================
+# TCU Dashboard - Docker Compose
+# =====================================================
+# Configuração para deploy com Supabase (banco externo)
+# =====================================================
+
+services:
+  # Frontend - React application (Nginx)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tcu-dashboard-app
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Backend API - Node.js + Express + Supabase
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: tcu-dashboard-api
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      # Supabase credentials (usar secrets em produção!)
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_SERVICE_ROLE=${SUPABASE_SERVICE_ROLE}
+      # Gemini API
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      # Security
+      - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000}
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+# Network configuration
+networks:
+  app-network:
+    driver: bridge
+
+# =====================================================
+# NOTAS IMPORTANTES
+# =====================================================
+#
+# 1. Database: Agora usa Supabase (PostgreSQL externo)
+#    - Não é mais necessário container de banco local
+#    - Configure SUPABASE_URL e SUPABASE_SERVICE_ROLE no .env
+#
+# 2. Secrets em Produção:
+#    - Use Docker Secrets ou variáveis de ambiente do host
+#    - NUNCA commite valores reais no docker-compose.yml
+#    - Exemplo: docker-compose --env-file .env.production up -d
+#
+# 3. Healthchecks:
+#    - App: Verifica se Nginx está respondendo
+#    - API: Verifica endpoint /health (que valida conexão com Supabase)
+#
+# 4. Para desenvolvimento local com hot-reload:
+#    - Use: npm run dev (frontend) e npm run dev (backend)
+#    - Não é necessário Docker para desenvolvimento
+#
+# 5. Logs:
+#    - docker-compose logs -f app
+#    - docker-compose logs -f api
+#
+# =====================================================
